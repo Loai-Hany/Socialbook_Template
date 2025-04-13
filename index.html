@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social_Book</title>
+    <!-- Normalize CSS File -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="CSS/main.css" />
+    <!-- Font Awesome Liberary -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- FavIcon Image -->
+    <link rel="shortcut icon" href="Images/favicon.jpg" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=Cairo+Play:wght@700&family=Dancing+Script&family=Jomhuria&family=Lato&family=Lobster&family=Lobster+Two:ital@1&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@700&family=Raleway&family=Shadows+Into+Light+Two&family=Wallpoet&family=Work+Sans:ital,wght@0,400;1,600&family=ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav>
+      <div class="nav-left">
+        <img src="Images/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><img src="Images/notification.png" /></li>
+          <li><img src="Images/inbox.png" /></li>
+          <li><img src="Images/video.png" /></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="Images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="user-icon" id="userIcon">
+          <img src="Images/profile-pic.png" alt="" />
+        </div>
+      </div>
+
+      <!----------------- Settings Menu --------------------->
+      <div class="settings-menu" id="dropdown-menu">
+        <div id="mode-btn">
+          <span></span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="Images/profile-pic.png" />
+            <div>
+              <p>John Nicholson</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <div class="user-profile">
+            <img src="Images/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <div class="setting-links">
+            <img src="Images/setting.png" class="settings-icon" />
+            <a href="#"
+              >Settings $ Privacy <img src="Images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="Images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help $ Support <img src="Images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="Images/display.png" class="settings-icon" />
+            <a href="#"
+              >Display $ Accessibility <img src="Images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="Images/logout.png" class="settings-icon" />
+            <a href="#">Logout <img src="Images/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Container -->
+    <div class="container">
+      <!----------------- left-sidebar --------------------->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><img src="Images/news.png" /> Latest News</a>
+          <a href="#"><img src="Images/friends.png" /> Friends</a>
+          <a href="#"><img src="Images/group.png" /> Group</a>
+          <a href="#"><img src="Images/marketplace.png" /> Marketplace</a>
+          <a href="#"><img src="Images/watch.png" /> Watch</a>
+          <a href="#">See More</a>
+        </div>
+
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"><img src="Images/shortcut-1.png" />Web Developers</a>
+          <a href="#"><img src="Images/shortcut-2.png" />Web Design course</a>
+          <a href="#"
+            ><img src="Images/shortcut-3.png" />Full Stack Development</a
+          >
+          <a href="#"><img src="Images/shortcut-4.png" />Website Experts</a>
+        </div>
+      </div>
+
+      <!----------------- main-content --------------------->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story-one">
+            <img src="Images/upload.png" />
+            <p>Post Story</p>
+          </div>
+
+          <div class="story story-two">
+            <img src="Images/member-1.png" />
+            <p>Alison</p>
+          </div>
+
+          <div class="story story-three">
+            <img src="Images/member-2.png" />
+            <p>Jackson</p>
+          </div>
+
+          <div class="story story-four">
+            <img src="Images/member-3.png" />
+            <p>Samona</p>
+          </div>
+
+          <div class="story story-five">
+            <img src="Images/member-4.png" />
+            <p>John Doe</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="Images/profile-pic.png" />
+            <div>
+              <p>John Nicholson</p>
+              <small>Public <i class="fas fa-caret-down"></i></small>
+            </div>
+          </div>
+
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind, John?"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#"><img src="Images/live-video.png" /> Live Video</a>
+              <a href="#"><img src="Images/photo.png" /> Photo Video</a>
+              <a href="#"><img src="Images/feeling.png" /> Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/profile-pic.png" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2023, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Subscribe <span>@Easy Tutoriales</span> Youtube Channel to watch
+            more videos on website development and UI designs.
+            <a href="#">#EasyTutoriales</a>
+            <a href="#">#YoutubeChannel</a>
+          </p>
+          <img src="Images/feed-image-1.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="Images/like-blue.png" /> 120</div>
+              <div><img src="Images/comments.png" /> 45</div>
+              <div><img src="Images/share.png" /> 20</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="Images/profile-pic.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/member-3.png" />
+              <div>
+                <p>Samona Rose</p>
+                <span>April 18 2023, 18:20 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Like and Share this video with friends, tag
+            <span>@Easy Tutoriales</span> facebook page on your post. Ask your
+            doubts in the comments
+            <a href="#">#EasyTutoriales</a>
+            <a href="#">#YoutubeChannel</a>
+          </p>
+          <img src="Images/feed-image-2.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="Images/like.png" /> 90</div>
+              <div><img src="Images/comments.png" /> 32</div>
+              <div><img src="Images/share.png" /> 8</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="Images/member-3.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/member-2.png" />
+              <div>
+                <p>Jackson Aston</p>
+                <span>Mai 5 2023, 1:20 am</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Subscribe <span>@Easy Tutoriales</span> Youtube Channel to watch
+            more videos on website development and UI designs.
+            <a href="#">#EasyTutoriales</a>
+            <a href="#">#YoutubeChannel</a>
+          </p>
+          <img src="Images/feed-image-3.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="Images/like-blue.png" /> 80</div>
+              <div><img src="Images/comments.png" /> 38</div>
+              <div><img src="Images/share.png" /> 10</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="Images/member-2.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/member-1.png" />
+              <div>
+                <p>Alison Mina</p>
+                <span>Mai 20 2023, 4:30 am</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Like and Share this video with friends, tag
+            <span>@Easy Tutoriales</span> facebook page on your post. Ask your
+            doubts in the comments
+            <a href="#">#EasyTutoriales</a>
+            <a href="#">#YoutubeChannel</a>
+          </p>
+          <img src="Images/feed-image-4.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="Images/like-blue.png" /> 130</div>
+              <div><img src="Images/comments.png" /> 60</div>
+              <div><img src="Images/share.png" /> 16</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="Images/member-1.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/member-4.png" />
+              <div>
+                <p>John Doe</p>
+                <span>Septmber 22 2023, 8:15 am</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Subscribe <span>@Easy Tutoriales</span> Youtube Channel to watch
+            more videos on website development and UI designs.
+            <a href="#">#EasyTutoriales</a>
+            <a href="#">#YoutubeChannel</a>
+          </p>
+          <img src="Images/feed-image-5.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="Images/like.png" /> 70</div>
+              <div><img src="Images/comments.png" /> 20</div>
+              <div><img src="Images/share.png" /> 5</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="Images/member-4.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/member-5.png" />
+              <div>
+                <p>Alexender Fetez</p>
+                <span>October 6 2022, 1:15 am</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Like and Share this video with friends, tag
+            <span>@Easy Tutoriales</span> facebook page on your post. Ask your
+            doubts in the comments
+            <a href="#">#EasyTutoriales</a>
+            <a href="#">#YoutubeChannel</a>
+          </p>
+          <img src="Images/advertisement.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="Images/like-blue.png" /> 88</div>
+              <div><img src="Images/comments.png" /> 17</div>
+              <div><img src="Images/share.png" /> 6</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="Images/member-5.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/member-7.png" />
+              <div>
+                <p>Tomas Earen</p>
+                <span>Mai 17 2022, 3:33 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Subscribe <span>@Easy Tutoriales</span> Youtube Channel to watch
+            more videos on website development and UI designs.
+            <a href="#">#EasyTutoriales</a>
+            <a href="#">#YoutubeChannel</a>
+          </p>
+          <img src="Images/advertisement.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="Images/like.png" /> 128</div>
+              <div><img src="Images/comments.png" /> 30</div>
+              <div><img src="Images/share.png" /> 12</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="Images/member-7.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="load-more-button">Load More</button>
+      </div>
+
+      <!----------------- right-sidebar ------------------->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="fas fa-map-marker-alt"></i>Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>22</h3>
+            <span>June</span>
+          </div>
+          <div class="right-event">
+            <h4>Mobile Marketing</h4>
+            <p><i class="fas fa-map-marker-alt"></i>Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+
+        <img src="Images/advertisement.png" class="sidebar-ads" />
+
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="Images/member-1.png" />
+          </div>
+          <p>Alison Mina</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="Images/member-2.png" />
+          </div>
+          <p>Jackson Aston</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="Images/member-3.png" />
+          </div>
+          <p>Samona Rose</p>
+        </div>
+      </div>
+
+      <button class="up-btn" id="btnToUp">UP</button>
+    </div>
+    <!-- End Container -->
+
+    <footer>
+      <p>
+        Copyright 2023 By <span>Loay Hany</span> - Easy Tutoriales Youtube
+        Channel
+      </p>
+    </footer>
+
+    <script src="JS/main.js"></script>
+  </body>
+</html>
